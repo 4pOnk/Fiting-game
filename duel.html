@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jump Throw</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        canvas{
+            background-color: #ffdae4;
+            display: block;
+        }
+        .winner1, .winner2 {
+            position: absolute;
+            top: 10vh;
+            text-align: center;
+            width: 100%;
+            display: none;
+
+        }
+        .winner2 h1{
+            font-size: 55px;
+            font-family: "Malgun Gothic";
+            color: #3b2863;
+            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: #1b0001;
+        }
+        .winner1 h1{
+            font-size: 55px;
+            font-family: "Malgun Gothic";
+            color: #9b421e;
+            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: #00191b;
+        }
+        .wins{
+            position: absolute;
+            background-color: white;
+            padding: 20px 40px;
+            right: 0;
+        }
+        .wins h3{
+            padding: 10px 0;
+            font-size: 25px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #00191b;
+        }
+    </style>
+</head>
+<body>
+<div class="winner1">
+    <h1>Winner : player1</h1>
+</div>
+<div class="winner2">
+    <h1>Winner : player2</h1>
+</div>
+<div class="wins">
+    <h1>Wins:</h1>
+    <h3 style="color:#9b421e">Player1: <span id="p1Wins">0</span></h3>
+    <h3 style="color: #3b2863">Player2: <span id="p2Wins">0</span></h3>
+</div>
+<canvas id = 'canvas'></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
